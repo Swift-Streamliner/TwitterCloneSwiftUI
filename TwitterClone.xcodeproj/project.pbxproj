@@ -13,6 +13,7 @@
 		193389942A35BE0E00B19DB0 /* SideMenuRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193389932A35BE0E00B19DB0 /* SideMenuRowView.swift */; };
 		193389962A35BE2400B19DB0 /* SideMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193389952A35BE2400B19DB0 /* SideMenuViewModel.swift */; };
 		193389982A35C45400B19DB0 /* UserStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193389972A35C45400B19DB0 /* UserStatsView.swift */; };
+		1933899A2A35D21700B19DB0 /* SideMenuOptionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193389992A35D21700B19DB0 /* SideMenuOptionRowView.swift */; };
 		19D4A7EF2A30F62200D15293 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D4A7EE2A30F62200D15293 /* MainTabView.swift */; };
 		19D4A7F52A30F74700D15293 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D4A7F42A30F74700D15293 /* ExploreView.swift */; };
 		19D4A7F72A30F75500D15293 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D4A7F62A30F75500D15293 /* NotificationsView.swift */; };
@@ -33,6 +34,7 @@
 		193389932A35BE0E00B19DB0 /* SideMenuRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuRowView.swift; sourceTree = "<group>"; };
 		193389952A35BE2400B19DB0 /* SideMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewModel.swift; sourceTree = "<group>"; };
 		193389972A35C45400B19DB0 /* UserStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatsView.swift; sourceTree = "<group>"; };
+		193389992A35D21700B19DB0 /* SideMenuOptionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuOptionRowView.swift; sourceTree = "<group>"; };
 		19D4A7EE2A30F62200D15293 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		19D4A7F42A30F74700D15293 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
 		19D4A7F62A30F75500D15293 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 			children = (
 				193389912A35BDFA00B19DB0 /* SideMenuView.swift */,
 				193389932A35BE0E00B19DB0 /* SideMenuRowView.swift */,
+				193389992A35D21700B19DB0 /* SideMenuOptionRowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 				19D4A7F52A30F74700D15293 /* ExploreView.swift in Sources */,
 				193389962A35BE2400B19DB0 /* SideMenuViewModel.swift in Sources */,
 				1933898D2A35B9AD00B19DB0 /* UserRowView.swift in Sources */,
+				1933899A2A35D21700B19DB0 /* SideMenuOptionRowView.swift in Sources */,
 				19D4A7EF2A30F62200D15293 /* MainTabView.swift in Sources */,
 				19D4A7F72A30F75500D15293 /* NotificationsView.swift in Sources */,
 				193389982A35C45400B19DB0 /* UserStatsView.swift in Sources */,
