@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ProfileView: View {
     @State private var selectedFilter = TweetFilterViewModel.tweets
+    @Environment(\.presentationMode) var mode
     @Namespace var animation
     
     var body: some View {
@@ -17,7 +18,7 @@ struct ProfileView: View {
             actionButtons
             userInfoDetails
             tweetFilterBar
-            
+            tweetsView
             Spacer()
         }
     }
@@ -35,7 +36,7 @@ extension ProfileView  {
             Color(.systemBlue).ignoresSafeArea()
             VStack {
                 Button(action: {
-                    
+                    mode.wrappedValue.dismiss()
                 }, label: {
                     Image(systemName: "arrow.left")
                         .resizable()
@@ -157,5 +158,16 @@ extension ProfileView  {
             }
         }
         .overlay(Divider().offset(x:0, y:16))
+    }
+    
+    var tweetsView: some View {
+        ScrollView {
+            LazyVStack {
+                ForEach(0...9, id: \.self) { _ in
+                    TweetRowView()
+                        .padding()
+                }
+            }
+        }
     }
 }
