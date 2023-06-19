@@ -53,7 +53,7 @@ struct LoginView: View {
             Spacer()
             
             NavigationLink {
-                RegistrationView()
+                RegistrationView().environmentObject(viewModel)
                     .navigationBarHidden(true)
             } label: {
                 HStack {
