@@ -27,6 +27,7 @@
 		1973F1492A3CCE2C005AF209 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1973F1482A3CCE2C005AF209 /* FirebaseFirestoreSwift */; };
 		1973F14B2A3CCE2C005AF209 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 1973F14A2A3CCE2C005AF209 /* FirebaseStorage */; };
 		1973F14D2A3F25A5005AF209 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1973F14C2A3F25A5005AF209 /* AuthViewModel.swift */; };
+		19901F3D2A420E1B0086B51B /* ProfilePhotoSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19901F3C2A420E1B0086B51B /* ProfilePhotoSelectorView.swift */; };
 		19D4A7EF2A30F62200D15293 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D4A7EE2A30F62200D15293 /* MainTabView.swift */; };
 		19D4A7F52A30F74700D15293 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D4A7F42A30F74700D15293 /* ExploreView.swift */; };
 		19D4A7F72A30F75500D15293 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D4A7F62A30F75500D15293 /* NotificationsView.swift */; };
@@ -57,6 +58,7 @@
 		193389B02A3B651A00B19DB0 /* AuthenticationHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationHeaderView.swift; sourceTree = "<group>"; };
 		1973F1412A3CCCE9005AF209 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		1973F14C2A3F25A5005AF209 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		19901F3C2A420E1B0086B51B /* ProfilePhotoSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotoSelectorView.swift; sourceTree = "<group>"; };
 		19D4A7EE2A30F62200D15293 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		19D4A7F42A30F74700D15293 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
 		19D4A7F62A30F75500D15293 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 				193389A82A3A2DF000B19DB0 /* LoginView.swift */,
 				193389AA2A3A2E0700B19DB0 /* RegistrationView.swift */,
 				193389B02A3B651A00B19DB0 /* AuthenticationHeaderView.swift */,
+				19901F3C2A420E1B0086B51B /* ProfilePhotoSelectorView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -464,6 +467,7 @@
 				19D61A972A27D06D001817A1 /* TwitterCloneApp.swift in Sources */,
 				193389A02A38CE9A00B19DB0 /* NewTweetView.swift in Sources */,
 				19D4A7F52A30F74700D15293 /* ExploreView.swift in Sources */,
+				19901F3D2A420E1B0086B51B /* ProfilePhotoSelectorView.swift in Sources */,
 				193389962A35BE2400B19DB0 /* SideMenuViewModel.swift in Sources */,
 				1933898D2A35B9AD00B19DB0 /* UserRowView.swift in Sources */,
 				193389AD2A3A2F3300B19DB0 /* RoundedShape.swift in Sources */,

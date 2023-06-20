@@ -20,8 +20,8 @@ struct TwitterCloneApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                ContentView()
-                    .environmentObject(viewModel)
+                ProfilePhotoSelectorView()
+                //ContentView().environmentObject(viewModel)
             }
         }
     }

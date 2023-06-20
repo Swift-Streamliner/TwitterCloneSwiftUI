@@ -38,7 +38,7 @@ struct LoginView: View {
             }
             
             Button {
-                viewModel.login(withEmail: email, password: password)
+                //viewModel.login(withEmail: email, password: password)
             } label: {
                 Text("Sign In")
                     .font(.headline)
@@ -53,8 +53,9 @@ struct LoginView: View {
             Spacer()
             
             NavigationLink {
-                RegistrationView().environmentObject(viewModel)
+                RegistrationView()
                     .navigationBarHidden(true)
+                    .environmentObject(viewModel)
             } label: {
                 HStack {
                     Text("Don't have an account?")
@@ -74,6 +75,6 @@ struct LoginView: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        LoginView().environmentObject(AuthViewModel())
     }
 }
