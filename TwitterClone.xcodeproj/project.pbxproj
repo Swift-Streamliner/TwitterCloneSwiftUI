@@ -28,6 +28,7 @@
 		1973F14B2A3CCE2C005AF209 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 1973F14A2A3CCE2C005AF209 /* FirebaseStorage */; };
 		1973F14D2A3F25A5005AF209 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1973F14C2A3F25A5005AF209 /* AuthViewModel.swift */; };
 		19901F3D2A420E1B0086B51B /* ProfilePhotoSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19901F3C2A420E1B0086B51B /* ProfilePhotoSelectorView.swift */; };
+		19901F402A4397260086B51B /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19901F3F2A4397260086B51B /* ImagePicker.swift */; };
 		19D4A7EF2A30F62200D15293 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D4A7EE2A30F62200D15293 /* MainTabView.swift */; };
 		19D4A7F52A30F74700D15293 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D4A7F42A30F74700D15293 /* ExploreView.swift */; };
 		19D4A7F72A30F75500D15293 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D4A7F62A30F75500D15293 /* NotificationsView.swift */; };
@@ -59,6 +60,7 @@
 		1973F1412A3CCCE9005AF209 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		1973F14C2A3F25A5005AF209 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		19901F3C2A420E1B0086B51B /* ProfilePhotoSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotoSelectorView.swift; sourceTree = "<group>"; };
+		19901F3F2A4397260086B51B /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		19D4A7EE2A30F62200D15293 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		19D4A7F42A30F74700D15293 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
 		19D4A7F62A30F75500D15293 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
@@ -192,6 +194,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		19901F3E2A4397110086B51B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				19901F3F2A4397260086B51B /* ImagePicker.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		19D4A7ED2A30F60D00D15293 /* MainTab */ = {
 			isa = PBXGroup;
 			children = (
@@ -269,6 +279,7 @@
 		19D61A952A27D06D001817A1 /* TwitterClone */ = {
 			isa = PBXGroup;
 			children = (
+				19901F3E2A4397110086B51B /* Utils */,
 				19D61AA82A27D101001817A1 /* Extensions */,
 				19D61AA72A27D0F2001817A1 /* Model */,
 				19D61AA62A27D0E4001817A1 /* Service */,
@@ -466,6 +477,7 @@
 				193389922A35BDFA00B19DB0 /* SideMenuView.swift in Sources */,
 				19D61A972A27D06D001817A1 /* TwitterCloneApp.swift in Sources */,
 				193389A02A38CE9A00B19DB0 /* NewTweetView.swift in Sources */,
+				19901F402A4397260086B51B /* ImagePicker.swift in Sources */,
 				19D4A7F52A30F74700D15293 /* ExploreView.swift in Sources */,
 				19901F3D2A420E1B0086B51B /* ProfilePhotoSelectorView.swift in Sources */,
 				193389962A35BE2400B19DB0 /* SideMenuViewModel.swift in Sources */,
