@@ -23,10 +23,12 @@ struct ProfilePhotoSelectorView: View {
             } label: {
                 if let profileImage = profileImage {
                     profileImage
+                        .resizable()
                         .modifier(ProfileImageModifier())
                         .clipShape(Circle())
                 } else {
                     Image("plus")
+                        .resizable()
                         .modifier(ProfileImageModifier())
                 }
             }
