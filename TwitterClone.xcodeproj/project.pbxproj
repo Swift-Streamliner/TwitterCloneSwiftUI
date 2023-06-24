@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		190FB6EC2A471C7800C03C09 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190FB6EB2A471C7800C03C09 /* ImageUploader.swift */; };
 		193389882A35AF6500B19DB0 /* TweetFilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193389872A35AF6500B19DB0 /* TweetFilterViewModel.swift */; };
 		1933898D2A35B9AD00B19DB0 /* UserRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1933898C2A35B9AD00B19DB0 /* UserRowView.swift */; };
 		193389922A35BDFA00B19DB0 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193389912A35BDFA00B19DB0 /* SideMenuView.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		190FB6EB2A471C7800C03C09 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		193389872A35AF6500B19DB0 /* TweetFilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetFilterViewModel.swift; sourceTree = "<group>"; };
 		1933898C2A35B9AD00B19DB0 /* UserRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRowView.swift; sourceTree = "<group>"; };
 		193389912A35BDFA00B19DB0 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
@@ -322,6 +324,7 @@
 		19D61AA62A27D0E4001817A1 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				190FB6EB2A471C7800C03C09 /* ImageUploader.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -487,6 +490,7 @@
 				19D4A7EF2A30F62200D15293 /* MainTabView.swift in Sources */,
 				193389A92A3A2DF000B19DB0 /* LoginView.swift in Sources */,
 				1973F14D2A3F25A5005AF209 /* AuthViewModel.swift in Sources */,
+				190FB6EC2A471C7800C03C09 /* ImageUploader.swift in Sources */,
 				19D4A7F72A30F75500D15293 /* NotificationsView.swift in Sources */,
 				193389982A35C45400B19DB0 /* UserStatsView.swift in Sources */,
 				193389AB2A3A2E0700B19DB0 /* RegistrationView.swift in Sources */,
