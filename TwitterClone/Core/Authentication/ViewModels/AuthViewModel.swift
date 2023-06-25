@@ -11,6 +11,7 @@ import SwiftUI
 
 class AuthViewModel: ObservableObject {
     @Published var userSession: FirebaseAuth.User?
+    @Published var tempUserSession: FirebaseAuth.User?
     @Published var didAuthenticateUser = false
     
     init() {
@@ -39,12 +40,9 @@ class AuthViewModel: ObservableObject {
                 print("DEBUG: Failed to register with error \(error.localizedDescription)")
                 return
             }
-            guard let user = result?.user else {
-                return
-            }
-            self.userSession = user
-            print("DEBUG: Registered user successfully")
-            print("DEBUG: User is \(self.userSession?.uid)")
+            guard let user = result?.user else { return }
+            
+            self.tempUserSession = user
             
             let data = [
                 "email" : email,
@@ -64,5 +62,16 @@ class AuthViewModel: ObservableObject {
     func signOut() {
         userSession = nil
         try? Auth.auth().signOut()
+    }
+    
+    func uploadProfileImage(_ image: UIImage) {
+        guard let uid = tempUserSession?.uid else { return }
+        ImageUploader.uploadImage(image: image) { profileImageUrl in
+            Firestore.firestore().collection("users")
+                .document(uid)
+                .updateData(["profileImageUrl" : profileImageUrl]) { _ in
+                    self.userSession = self.tempUserSession
+                }
+        }
     }
 }
