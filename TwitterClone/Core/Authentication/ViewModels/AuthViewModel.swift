@@ -29,8 +29,6 @@ class AuthViewModel: ObservableObject {
                 return
             }
             self.userSession = user
-            print("DEBUG: Login user successfully")
-            print("DEBUG: User is \(self.userSession?.uid)")
         }
     }
     
