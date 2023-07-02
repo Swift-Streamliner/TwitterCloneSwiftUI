@@ -27,6 +27,7 @@ struct ProfileView: View {
             tweetsView
             Spacer()
         }
+        .navigationBarHidden(true)
     }
 }
 
