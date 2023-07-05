@@ -26,4 +26,18 @@ struct UserService {
                 print("DBG: user email is \(user.email)")
             }
     }
+    
+    func fetchUsers(completion: @escaping([User]) -> Void) {
+        var users = [User]()
+        Firestore.firestore()
+            .collection("users")
+            .getDocuments { snapshot, _ in
+                guard let documents = snapshot?.documents else { return }
+                documents.forEach { document in
+                    guard let user = User(snapshot: snapshot) else { return }
+                    users.append(user)
+                }
+                completion(users)
+            }
+    }
 }
