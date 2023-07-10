@@ -24,6 +24,7 @@ struct ImageUploader {
             }
             ref.downloadURL { imageUrl, _ in
                 guard let imageUrl = imageUrl?.absoluteString else { return }
+                print("DBG: uploaded IMG URL : \(imageUrl)")
                 completion(imageUrl)
             }
         }
