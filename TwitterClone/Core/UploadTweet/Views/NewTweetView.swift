@@ -12,6 +12,8 @@ struct NewTweetView: View {
     @State private var caption = ""
     @Environment(\.presentationMode) var presentationMode
     @EnvironmentObject var authViewModel : AuthViewModel
+    @ObservableObject var uploadTweetViewModel = UploadTweetViewModel()
+    
     var body: some View {
         VStack {
             HStack {
@@ -23,7 +25,7 @@ struct NewTweetView: View {
                 }
                 Spacer()
                 Button {
-                    
+                    uploadTweetViewModel.uploadTweet(withCaption: caption)
                 } label: {
                     Text("Tweet")
                         .bold()
@@ -48,6 +50,11 @@ struct NewTweetView: View {
                 TextArea("What's happening?", text: $caption)
             }
             .padding()
+        }
+        .onReceive(uploadTweetViewModel.$didUploadTweet) { success in
+            if success {
+                presentationMode.wrappedValue.dismiss()
+            }
         }
     }
 }

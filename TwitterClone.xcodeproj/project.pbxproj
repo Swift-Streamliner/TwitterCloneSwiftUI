@@ -33,6 +33,8 @@
 		1973F14D2A3F25A5005AF209 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1973F14C2A3F25A5005AF209 /* AuthViewModel.swift */; };
 		19901F3D2A420E1B0086B51B /* ProfilePhotoSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19901F3C2A420E1B0086B51B /* ProfilePhotoSelectorView.swift */; };
 		19901F402A4397260086B51B /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19901F3F2A4397260086B51B /* ImagePicker.swift */; };
+		19983DEB2A6071AB002FC280 /* TweetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19983DEA2A6071AB002FC280 /* TweetService.swift */; };
+		19983DED2A60740B002FC280 /* UploadTweetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19983DEC2A60740B002FC280 /* UploadTweetViewModel.swift */; };
 		19D4A7EF2A30F62200D15293 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D4A7EE2A30F62200D15293 /* MainTabView.swift */; };
 		19D4A7F52A30F74700D15293 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D4A7F42A30F74700D15293 /* ExploreView.swift */; };
 		19D4A7F72A30F75500D15293 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D4A7F62A30F75500D15293 /* NotificationsView.swift */; };
@@ -70,6 +72,8 @@
 		1973F14C2A3F25A5005AF209 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		19901F3C2A420E1B0086B51B /* ProfilePhotoSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotoSelectorView.swift; sourceTree = "<group>"; };
 		19901F3F2A4397260086B51B /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		19983DEA2A6071AB002FC280 /* TweetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetService.swift; sourceTree = "<group>"; };
+		19983DEC2A60740B002FC280 /* UploadTweetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadTweetViewModel.swift; sourceTree = "<group>"; };
 		19D4A7EE2A30F62200D15293 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		19D4A7F42A30F74700D15293 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
 		19D4A7F62A30F75500D15293 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
@@ -175,6 +179,7 @@
 		1933899E2A3791ED00B19DB0 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				19983DEC2A60740B002FC280 /* UploadTweetViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -337,6 +342,7 @@
 			children = (
 				190FB6EB2A471C7800C03C09 /* ImageUploader.swift */,
 				19F211FF2A4C653A00EC6F17 /* UserService.swift */,
+				19983DEA2A6071AB002FC280 /* TweetService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -490,12 +496,14 @@
 				193389942A35BE0E00B19DB0 /* SideMenuRowView.swift in Sources */,
 				193389B12A3B651A00B19DB0 /* AuthenticationHeaderView.swift in Sources */,
 				1953BE672A5B547500EB2701 /* SearchBar.swift in Sources */,
+				19983DEB2A6071AB002FC280 /* TweetService.swift in Sources */,
 				1953BE652A5872E000EB2701 /* ExploreViewModel.swift in Sources */,
 				19D61AB12A291886001817A1 /* TweetRowView.swift in Sources */,
 				193389882A35AF6500B19DB0 /* TweetFilterViewModel.swift in Sources */,
 				19F212022A4C695500EC6F17 /* User.swift in Sources */,
 				193389AF2A3A33BC00B19DB0 /* CustomInputField.swift in Sources */,
 				19D61AAE2A2917EB001817A1 /* FeedView.swift in Sources */,
+				19983DED2A60740B002FC280 /* UploadTweetViewModel.swift in Sources */,
 				193389A22A38D0C800B19DB0 /* TextArea.swift in Sources */,
 				193389922A35BDFA00B19DB0 /* SideMenuView.swift in Sources */,
 				19D61A972A27D06D001817A1 /* TwitterCloneApp.swift in Sources */,
