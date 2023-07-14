@@ -12,7 +12,7 @@ struct NewTweetView: View {
     @State private var caption = ""
     @Environment(\.presentationMode) var presentationMode
     @EnvironmentObject var authViewModel : AuthViewModel
-    @ObservableObject var uploadTweetViewModel = UploadTweetViewModel()
+    @ObservedObject var uploadTweetViewModel = UploadTweetViewModel()
     
     var body: some View {
         VStack {

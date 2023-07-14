@@ -23,19 +23,19 @@ struct User : Identifiable, Hashable {
             self.email = email
         }
         
-        init?(snapshot: DocumentSnapshot) {
-            guard let data = snapshot.data() else { return nil }
-            guard let username = data["username"] as? String,
-                  let fullname = data["fullname"] as? String,
-                  let profileImageUrl = data["profileImageUrl"] as? String,
-                  let email = data["email"] as? String else {
-                return nil
-            }
-            
-            self.id = snapshot.documentID
-            self.username = username
-            self.fullname = fullname
-            self.profileImageUrl = profileImageUrl
-            self.email = email
+    init?(snapshot: DocumentSnapshot) {
+        guard let data = snapshot.data() else { return nil }
+        guard let username = data["username"] as? String,
+              let fullname = data["fullname"] as? String,
+              let profileImageUrl = data["profileImageUrl"] as? String,
+              let email = data["email"] as? String else {
+            return nil
         }
+        
+        self.id = snapshot.documentID
+        self.username = username
+        self.fullname = fullname
+        self.profileImageUrl = profileImageUrl
+        self.email = email
+    }
 }
