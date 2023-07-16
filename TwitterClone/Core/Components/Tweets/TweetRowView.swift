@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct TweetRowView: View {
     var tweet: Tweet
@@ -13,14 +14,16 @@ struct TweetRowView: View {
     var body: some View {
         VStack (alignment: .leading) {
             // profile image + user info + tweet
-            HStack (alignment: .top, spacing: 12) {
-                Circle()
-                    .frame(width: 56, height: 56)
-                    .foregroundColor(Color(.systemBlue))
-                
-                // User info and tweet caption
-                VStack (alignment: .leading, spacing: 4){
-                    if let user = tweet.user {
+            if let user = tweet.user {
+                HStack (alignment: .top, spacing: 12) {
+                    KFImage(URL(string: user.profileImageUrl))
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 56, height: 56)
+                        .clipShape(Circle())
+                    
+                    // User info and tweet caption
+                    VStack (alignment: .leading, spacing: 4){
                         HStack {
                             Text(user.fullname)
                                 .font(.subheadline).bold()
@@ -31,12 +34,12 @@ struct TweetRowView: View {
                                 .foregroundColor(.gray)
                                 .font(.caption)
                         }
+                        
+                        
+                        Text(tweet.caption)
+                            .font(.subheadline)
+                            .multilineTextAlignment(.leading)
                     }
-                    
-                    
-                    Text(tweet.caption)
-                        .font(.subheadline)
-                        .multilineTextAlignment(.leading)
                 }
             }
             // action buttons
