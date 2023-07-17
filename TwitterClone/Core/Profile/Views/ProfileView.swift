@@ -11,11 +11,11 @@ import Kingfisher
 struct ProfileView: View {
     @State private var selectedFilter = TweetFilterViewModel.tweets
     @Environment(\.presentationMode) var mode
+    @ObservedObject var profileViewModel: ProfileViewModel
     @Namespace var animation
-    private let user: User
     
     init(user: User) {
-        self.user = user
+        self.profileViewModel = ProfileViewModel(user: user)
     }
     
     var body: some View {
@@ -51,7 +51,7 @@ extension ProfileView  {
                         .foregroundColor(.white)
                         .offset(x:16, y: -16)
                 })
-                KFImage(URL(string: user.profileImageUrl))
+                KFImage(URL(string: profileViewModel.user.profileImageUrl))
                     .resizable()
                     .clipShape(Circle())
                     .frame(width: 72, height: 72)
@@ -86,11 +86,11 @@ extension ProfileView  {
     var userInfoDetails: some View {
         VStack (alignment: .leading, spacing: 4) {
             HStack {
-                Text(user.fullname)
+                Text(profileViewModel.user.fullname)
                 Image(systemName: "checkmark.seal.fill")
                     .foregroundColor(Color(.systemBlue))
             }
-            Text("@\(user.username)")
+            Text("@\(profileViewModel.user.username)")
                 .font(.subheadline)
                 .foregroundColor(.gray)
             

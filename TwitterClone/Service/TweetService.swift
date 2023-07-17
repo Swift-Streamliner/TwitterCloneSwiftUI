@@ -39,4 +39,14 @@ struct TweetService {
             complition(tweets)
         }
     }
+    
+    func fetchTweets(forUid uid: String, complition: @escaping([Tweet]) -> Void) {
+        Firestore.firestore().collection("tweets")
+            .whereField("uid", isEqualTo: uid)
+            .getDocuments { snapshot, _ in
+            guard let documents = snapshot?.documents else { return }
+            let tweets = documents.compactMap({Tweet(snapshot: $0)})
+                complition(tweets.sorted(by: { $0.timestamp.dateValue() > $1.timestamp.dateValue()}))
+        }
+    }
 }
