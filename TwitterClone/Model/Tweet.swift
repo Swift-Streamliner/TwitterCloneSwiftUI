@@ -15,6 +15,7 @@ struct Tweet: Identifiable {
     let uid: String
     var likes: Int
     var user: User?
+    var didLike: Bool?
     
     
     init?(snapshot: DocumentSnapshot) {
